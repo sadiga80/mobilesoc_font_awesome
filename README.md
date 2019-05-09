@@ -19,7 +19,7 @@ In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 ## Usage
 
 ```dart
-import 'https://github.com/AdvancedThreatAnalytics/mobilesoc_font_awesome.git';
+import 'package:mobilesoc_font_awesome/mobilesoc_font_awesome.dart';
 
 class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
