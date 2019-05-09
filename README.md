@@ -1,14 +1,37 @@
 # mobilesoc_font_awesome
 
-A new flutter plugin project.
+This plugin maps Font Awesome Icon strings (e.g - `fa-user`) as Flutter Icons.
 
-## Getting Started
+Based on Font Awesome 5.5. Includes all free icons:
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.io/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+  * Regular
+  * Solid
+  * Brands
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+In the `dependencies:` section of your `pubspec.yaml`, add the following line:
+
+```yaml
+  mobilesoc_font_awesome: git_url
+```
+
+## Usage
+
+```dart
+import 'https://github.com/AdvancedThreatAnalytics/mobilesoc_font_awesome.git';
+
+class MyWidget extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return new IconButton(
+      // Use the MobilesocFontAwesome class for the IconData
+      icon: new Icon(MobilesocFontAwesome.getIcon('fa-user')), 
+      onPressed: () { print("Pressed"); }
+     );
+  }
+}
+```
+
+## Example
+
+View the Flutter app in the `example` directory to see the edge cases and I'll add the gallery for it soon.
