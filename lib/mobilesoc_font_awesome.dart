@@ -1,13 +1,26 @@
-import 'dart:async';
+library font_awesome_flutter;
 
-import 'package:flutter/services.dart';
+import 'font_awesome_map.dart';
+import 'package:flutter/widgets.dart';
+
+const String BLANK_ICON = 'fa-circle';
 
 class MobilesocFontAwesome {
-  static const MethodChannel _channel =
-      const MethodChannel('mobilesoc_font_awesome');
+  static IconData getIcon(String faIconName) {
+    IconData icon = icons[faIconName];
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
+    if (icon == null) {
+      List<String> iconKeys = icons.keys;
+
+      for (String key in iconKeys) {
+        if (key.contains(faIconName)) {
+          return icons[key];
+        }
+      }
+
+      return icons[BLANK_ICON];
+    }
+
+    return icon;
   }
 }
