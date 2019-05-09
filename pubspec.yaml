@@ -1,0 +1,30 @@
+name: mobilesoc_font_awesome
+description: A new flutter plugin project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  recase: "^2.0.0+1"
+
+flutter:
+  fonts:
+    - family: FontAwesomeBrands
+      fonts:
+        - asset: lib/fonts/fa-brands-400.ttf
+          weight: 400
+    - family: FontAwesomeRegular
+      fonts:
+        - asset: lib/fonts/fa-regular-400.ttf
+          weight: 400
+    - family: FontAwesomeSolid
+      fonts:
+        - asset: lib/fonts/fa-solid-900.ttf
+          weight: 900
