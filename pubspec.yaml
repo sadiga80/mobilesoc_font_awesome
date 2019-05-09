@@ -28,3 +28,4 @@ flutter:
       fonts:
         - asset: lib/fonts/fa-solid-900.ttf
           weight: 900
+

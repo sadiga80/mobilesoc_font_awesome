@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:recase/recase.dart';
-
 void main(List<String> arguments) {
   var file = new File(arguments.first);
 

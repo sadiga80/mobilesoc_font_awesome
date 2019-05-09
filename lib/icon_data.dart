@@ -1,4 +1,4 @@
-library font_awesome_flutter;
+library mobilesoc_font_awesome;
 
 import 'package:flutter/widgets.dart';
 
@@ -7,7 +7,7 @@ class IconDataBrands extends IconData {
       : super(
           codePoint,
           fontFamily: 'FontAwesomeBrands',
-          fontPackage: 'font_awesome_flutter',
+          fontPackage: 'mobilesoc_font_awesome',
         );
 }
 
@@ -16,7 +16,7 @@ class IconDataSolid extends IconData {
       : super(
           codePoint,
           fontFamily: 'FontAwesomeSolid',
-          fontPackage: 'font_awesome_flutter',
+          fontPackage: 'mobilesoc_font_awesome',
         );
 }
 
@@ -25,6 +25,6 @@ class IconDataRegular extends IconData {
       : super(
           codePoint,
           fontFamily: 'FontAwesomeRegular',
-          fontPackage: 'font_awesome_flutter',
+          fontPackage: 'mobilesoc_font_awesome',
         );
 }
