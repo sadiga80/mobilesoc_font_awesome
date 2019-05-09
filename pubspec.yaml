@@ -1,8 +1,6 @@
 name: mobilesoc_font_awesome
-description: A new flutter plugin project.
+description: A plugin to convert Font Awesome Icon string to Flutter Icons.
 version: 0.0.1
-author:
-homepage:
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
